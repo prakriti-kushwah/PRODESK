@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #ffb347;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.survey-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-form h2 {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.subtext {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.survey-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.survey-form input[type="text"],
+.survey-form input[type="email"],
+.survey-form input[type="number"],
+.survey-form select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label,
+.radio-group label {
+  font-weight: normal;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
