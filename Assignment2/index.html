@@ -1,0 +1,105 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration form</title>
+  <style>
+    body {
+      background-color: #d8e5d0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #e6f0e2;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .social-button {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .social-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #5d7f63;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>CREATE ACCOUNT</h2>
+
+  <div class="social-buttons">
+    <div class="social-button">
+      <img src="images/glogo.png" alt="Google">
+    </div>
+    <div class="social-button">
+      <img src="images/flogo.png" alt="Facebook">
+    </div>
+  </div>
+
+  <p>or use your email for registration</p>
+
+  <form action="/submit" method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="SIGN UP">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
